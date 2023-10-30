@@ -1,0 +1,1563 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xml:base='https://prod-useast-b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='flu_shots' path='/t/sales01/workbooks' revision='1.0' site='sales01' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Flu Demo Data' inline='true' name='federated.0isxhof18dxmq81eyjpnm00eotn9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Flu Demo Data' name='textscan.1bi1n511f7h5c010xg72j0qpwu20'>
+            <connection class='textscan' directory='C:/Users/prince/Downloads' filename='Flu Demo Data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1bi1n511f7h5c010xg72j0qpwu20' name='Flu Demo Data.csv' table='[Flu Demo Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='string' name='id' ordinal='1' />
+            <column datatype='string' name='first' ordinal='2' />
+            <column datatype='string' name='last' ordinal='3' />
+            <column datatype='string' name='county' ordinal='4' />
+            <column datatype='string' name='race' ordinal='5' />
+            <column datatype='string' name='ethnicity' ordinal='6' />
+            <column datatype='boolean' name='gender' ordinal='7' />
+            <column datatype='datetime' name='earliest_flu_shot_2022' ordinal='8' />
+            <column datatype='integer' name='zip' ordinal='9' />
+            <column datatype='integer' name='flu_shot_2022' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1bi1n511f7h5c010xg72j0qpwu20' name='Flu Demo Data.csv' table='[Flu Demo Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='string' name='id' ordinal='1' />
+            <column datatype='string' name='first' ordinal='2' />
+            <column datatype='string' name='last' ordinal='3' />
+            <column datatype='string' name='county' ordinal='4' />
+            <column datatype='string' name='race' ordinal='5' />
+            <column datatype='string' name='ethnicity' ordinal='6' />
+            <column datatype='boolean' name='gender' ordinal='7' />
+            <column datatype='datetime' name='earliest_flu_shot_2022' ordinal='8' />
+            <column datatype='integer' name='zip' ordinal='9' />
+            <column datatype='integer' name='flu_shot_2022' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>first</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>last</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ethnicity]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>ethnicity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>earliest_flu_shot_2022</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[earliest_flu_shot_2022]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>earliest_flu_shot_2022</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zip]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>zip</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flu_shot_2022</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[flu_shot_2022]</local-name>
+            <parent-name>[Flu Demo Data.csv]</parent-name>
+            <remote-alias>flu_shot_2022</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='age_group' datatype='string' name='[Calculation_1003176833619357696]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [age] &gt;=0 AND [age]&lt;=17 then &apos;0-17&apos;&#13;&#10;ELSEIF [age] &gt;= 18 AND [age] &lt;= 34 then &apos;18-34&apos;&#13;&#10;ELSEIF [age] &gt;= 35 AND [age] &lt;= 49 then &apos;35-49&apos;&#13;&#10;ELSEIF [age] &gt;= 50 AND [age] &lt;= 64 then &apos;50-64&apos;&#13;&#10;ELSEIF [age] &gt;= 65 then &apos;65+&apos;&#13;&#10;END' />
+      </column>
+      <column caption='#rows' datatype='integer' name='[Calculation_1003176833771819009]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='% of Flu Shot 2022' datatype='real' name='[Calculation_1003176833954406402]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM ([flu_shot_2022])/ COUNT([flu_shot_2022])' />
+      </column>
+      <column caption='Full Name' datatype='string' name='[Calculation_1003176833975971843]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[first] + &quot; &quot; + [last]' />
+      </column>
+      <column caption='Final Number of Patients' datatype='integer' name='[Calculation_1003176833989550085]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED: SUM([Calculation_1003176833771819009])}' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Flu Demo Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+      <column caption='Ethnicity' datatype='string' name='[ethnicity]' role='dimension' type='nominal' />
+      <column caption='First' datatype='string' name='[first]' role='dimension' type='nominal' />
+      <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+      <column caption='Gender' datatype='boolean' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Last' datatype='string' name='[last]' role='dimension' type='nominal' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;asian&quot;' value='Asian' />
+          <alias key='&quot;black&quot;' value='Black' />
+          <alias key='&quot;hawaiian&quot;' value='Hawaiian' />
+          <alias key='&quot;native&quot;' value='Native' />
+          <alias key='&quot;other&quot;' value='Other' />
+          <alias key='&quot;white&quot;' value='White' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' caption='Zip' datatype='integer' default-format='*00000' name='[zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[Calculation_1003176833771819009]' derivation='Avg' name='[avg:Calculation_1003176833771819009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[flu_shot_2022]' derivation='Sum' name='[cum:sum:flu_shot_2022:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_1003176833989550085]' derivation='Sum' name='[sum:Calculation_1003176833989550085:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1003176833954406402]' derivation='User' name='[usr:Calculation_1003176833954406402:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (MONTH(Earliest Flu Shot 2022))' hidden='true' name='[Action (MONTH(Earliest Flu Shot 2022))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#0096c7'>
+              <bucket>&quot;[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]&quot;</bucket>
+            </map>
+            <map to='#0096c7'>
+              <bucket>&quot;[federated.0isxhof18dxmq81eyjpnm00eotn9].[cum:sum:flu_shot_2022:qk]&quot;</bucket>
+            </map>
+            <map to='#caf0f8'>
+              <bucket>&quot;[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk]&quot;</bucket>
+            </map>
+            <map to='#caf0f8'>
+              <bucket>&quot;[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Flu Demo Data.csv' id='Flu Demo Data.csv_FD278AE311D845558994E5BDD13D5B5B'>
+            <properties context=''>
+              <relation connection='textscan.1bi1n511f7h5c010xg72j0qpwu20' name='Flu Demo Data.csv' table='[Flu Demo Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='age' ordinal='0' />
+                  <column datatype='string' name='id' ordinal='1' />
+                  <column datatype='string' name='first' ordinal='2' />
+                  <column datatype='string' name='last' ordinal='3' />
+                  <column datatype='string' name='county' ordinal='4' />
+                  <column datatype='string' name='race' ordinal='5' />
+                  <column datatype='string' name='ethnicity' ordinal='6' />
+                  <column datatype='boolean' name='gender' ordinal='7' />
+                  <column datatype='datetime' name='earliest_flu_shot_2022' ordinal='8' />
+                  <column datatype='integer' name='zip' ordinal='9' />
+                  <column datatype='integer' name='flu_shot_2022' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_0CCCF3FFAD2D48FD994F1BACB51F640C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Total Cumulative Patients Vaccinated' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Total Cumulative Patients Vaccinated' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_AA8B143E9B7A48B1955731FCBD14093E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action3_AF35232693574F749DB68465BDF3A4B8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Flu Shot % by County' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action4_1F971CB00D7A470B811D95DE8D5BA594]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Total Cumulative Patients Vaccinated' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Flu Shot % by County'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'>Flu Shot % by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flu Demo Data' name='federated.0isxhof18dxmq81eyjpnm00eotn9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0isxhof18dxmq81eyjpnm00eotn9'>
+            <column-instance column='[flu_shot_2022]' derivation='Avg' name='[avg:flu_shot_2022:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+            <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+            <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]'>
+            <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' user:ui-action-filter='[Action4_1F971CB00D7A470B811D95DE8D5BA594]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:flu_shot_2022:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#03045e' />
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:county:nk]' />
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:flu_shot_2022:qk]' />
+              <geometry column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Latitude (generated)]</rows>
+        <cols>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A27074C1-DE79-47E1-88C9-13AE6A9ADFF0}' />
+    </worksheet>
+    <worksheet name='Flu Shots Given'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flu Demo Data' name='federated.0isxhof18dxmq81eyjpnm00eotn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0isxhof18dxmq81eyjpnm00eotn9'>
+            <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+            <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+            <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[flu_shot_2022]' derivation='Sum' name='[sum:flu_shot_2022:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]'>
+            <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' user:ui-action-filter='[Action4_1F971CB00D7A470B811D95DE8D5BA594]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='246' />
+            <format attr='height' value='96' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#03045e' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:flu_shot_2022:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'>Total Flu Shots Given</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'><![CDATA[<[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:flu_shot_2022:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='14.547999382019043' />
+                <format attr='mark-color' value='#0096c7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C546797E-C15E-4846-BCD3-95524853177B}' />
+    </worksheet>
+    <worksheet name='Flu Shots List'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'>Flu Shots List</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flu Demo Data' name='federated.0isxhof18dxmq81eyjpnm00eotn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0isxhof18dxmq81eyjpnm00eotn9'>
+            <column caption='Full Name' datatype='string' name='[Calculation_1003176833975971843]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[first] + &quot; &quot; + [last]' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+            <column caption='First' datatype='string' name='[first]' role='dimension' type='nominal' />
+            <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column caption='Last' datatype='string' name='[last]' role='dimension' type='nominal' />
+            <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1003176833975971843]' derivation='None' name='[none:Calculation_1003176833975971843:nk]' pivot='key' type='nominal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[flu_shot_2022]' derivation='Sum' name='[sum:flu_shot_2022:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]'>
+            <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' user:ui-action-filter='[Action4_1F971CB00D7A470B811D95DE8D5BA594]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' data-class='total' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#023e8a' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:id:nk]' value='false' />
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='font-weight' scope='rows' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:flu_shot_2022:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#caf0f8</color>
+                <color>#cdecf2</color>
+                <color>#d0e8ed</color>
+                <color>#d2e4e8</color>
+                <color>#d5e0e3</color>
+                <color>#d7dcde</color>
+                <color>#d9d9d9</color>
+                <color>#b2cdd6</color>
+                <color>#8cc1d3</color>
+                <color>#68b6d0</color>
+                <color>#44abcd</color>
+                <color>#21a0ca</color>
+                <color>#0096c7</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#03045e' />
+            <format attr='band-level' scope='rows' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:flu_shot_2022:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0isxhof18dxmq81eyjpnm00eotn9].[none:id:nk] / ([federated.0isxhof18dxmq81eyjpnm00eotn9].[none:Calculation_1003176833975971843:nk] / [federated.0isxhof18dxmq81eyjpnm00eotn9].[none:age:ok]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{51621755-6822-470F-B667-73FD44A92F6E}' />
+    </worksheet>
+    <worksheet name='Flu Shots by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'>Flu Shots by Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flu Demo Data' name='federated.0isxhof18dxmq81eyjpnm00eotn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0isxhof18dxmq81eyjpnm00eotn9'>
+            <column caption='age_group' datatype='string' name='[Calculation_1003176833619357696]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [age] &gt;=0 AND [age]&lt;=17 then &apos;0-17&apos;&#13;&#10;ELSEIF [age] &gt;= 18 AND [age] &lt;= 34 then &apos;18-34&apos;&#13;&#10;ELSEIF [age] &gt;= 35 AND [age] &lt;= 49 then &apos;35-49&apos;&#13;&#10;ELSEIF [age] &gt;= 50 AND [age] &lt;= 64 then &apos;50-64&apos;&#13;&#10;ELSEIF [age] &gt;= 65 then &apos;65+&apos;&#13;&#10;END' />
+            </column>
+            <column caption='#rows' datatype='integer' name='[Calculation_1003176833771819009]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='% of Flu Shot 2022' datatype='real' name='[Calculation_1003176833954406402]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM ([flu_shot_2022])/ COUNT([flu_shot_2022])' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1003176833771819009]' derivation='Avg' name='[avg:Calculation_1003176833771819009:qk]' pivot='key' type='quantitative' />
+            <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+            <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+            <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1003176833619357696]' derivation='None' name='[none:Calculation_1003176833619357696:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1003176833954406402]' derivation='User' name='[usr:Calculation_1003176833954406402:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]'>
+            <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' user:ui-action-filter='[Action4_1F971CB00D7A470B811D95DE8D5BA594]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]' field-type='quantitative' fold='true' major-origin='0.0' major-show='false' major-spacing='1.0' minor-origin='0.0' minor-show='false' minor-spacing='0.10000000000000001' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='1.0' minor-origin='0.0' minor-show='false' minor-spacing='0.10000000000000001' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:Calculation_1003176833619357696:nk]' value='42' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='width' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:Calculation_1003176833619357696:nk]' value='48' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#03045e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f72585' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+              <text column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#3a0ca3'>&lt;</run>
+                <run fontcolor='#3a0ca3'>[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]</run>
+                <run fontcolor='#3a0ca3'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#7209b7' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:Calculation_1003176833619357696:nk]</rows>
+        <cols>([federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk] + [federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk])</cols>
+      </table>
+      <simple-id uuid='{5D937162-C06D-4562-818C-3D3092FFCEFF}' />
+    </worksheet>
+    <worksheet name='Flu Shots by Race'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'>Flu Shots by Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flu Demo Data' name='federated.0isxhof18dxmq81eyjpnm00eotn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0isxhof18dxmq81eyjpnm00eotn9'>
+            <column caption='#rows' datatype='integer' name='[Calculation_1003176833771819009]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='% of Flu Shot 2022' datatype='real' name='[Calculation_1003176833954406402]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM ([flu_shot_2022])/ COUNT([flu_shot_2022])' />
+            </column>
+            <column-instance column='[Calculation_1003176833771819009]' derivation='Avg' name='[avg:Calculation_1003176833771819009:qk]' pivot='key' type='quantitative' />
+            <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+            <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+            <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[race]' derivation='None' name='[none:race:nk]' pivot='key' type='nominal' />
+            <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;asian&quot;' value='Asian' />
+                <alias key='&quot;black&quot;' value='Black' />
+                <alias key='&quot;hawaiian&quot;' value='Hawaiian' />
+                <alias key='&quot;native&quot;' value='Native' />
+                <alias key='&quot;other&quot;' value='Other' />
+                <alias key='&quot;white&quot;' value='White' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_1003176833954406402]' derivation='User' name='[usr:Calculation_1003176833954406402:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]'>
+            <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' user:ui-action-filter='[Action4_1F971CB00D7A470B811D95DE8D5BA594]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]' field-type='quantitative' fold='true' major-origin='0.0' major-show='false' major-spacing='1.0' minor-origin='0.0' minor-show='false' minor-spacing='0.10000000000000001' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='1.0' minor-origin='0.0' minor-show='false' minor-spacing='0.10000000000000001' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:race:nk]' value='34' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='width' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:race:nk]' value='60' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#03045e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f72585' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+              <text column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#3a0ca3'>&lt;</run>
+                <run fontcolor='#3a0ca3'>[federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk]</run>
+                <run fontcolor='#3a0ca3'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#7209b7' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0isxhof18dxmq81eyjpnm00eotn9].[none:race:nk]</rows>
+        <cols>([federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:Calculation_1003176833771819009:qk] + [federated.0isxhof18dxmq81eyjpnm00eotn9].[usr:Calculation_1003176833954406402:qk])</cols>
+      </table>
+      <simple-id uuid='{1A1B3EB1-9591-47D0-83B1-686329F6177D}' />
+    </worksheet>
+    <worksheet name='Total Compliance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flu Demo Data' name='federated.0isxhof18dxmq81eyjpnm00eotn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0isxhof18dxmq81eyjpnm00eotn9'>
+            <column-instance column='[flu_shot_2022]' derivation='Avg' name='[avg:flu_shot_2022:qk]' pivot='key' type='quantitative' />
+            <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+            <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+            <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]'>
+            <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' user:ui-action-filter='[Action4_1F971CB00D7A470B811D95DE8D5BA594]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0isxhof18dxmq81eyjpnm00eotn9].[Action (MONTH(Earliest Flu Shot 2022))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='246' />
+            <format attr='height' value='96' />
+            <format attr='text-format' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:flu_shot_2022:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#03045e' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:flu_shot_2022:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'>Total Compliance</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'><![CDATA[<[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:flu_shot_2022:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='14.547999382019043' />
+                <format attr='mark-color' value='#0096c7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DCDF8B80-487C-4B77-BBAE-A51298F8B1E7}' />
+    </worksheet>
+    <worksheet name='Total Cumulative Patients Vaccinated'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='18'>Total Cumulative Patients vaccinated</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flu Demo Data' name='federated.0isxhof18dxmq81eyjpnm00eotn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0isxhof18dxmq81eyjpnm00eotn9'>
+            <column caption='#rows' datatype='integer' name='[Calculation_1003176833771819009]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Final Number of Patients' datatype='integer' name='[Calculation_1003176833989550085]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED: SUM([Calculation_1003176833771819009])}' />
+            </column>
+            <column-instance column='[flu_shot_2022]' derivation='Sum' name='[cum:sum:flu_shot_2022:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Earliest Flu Shot 2022' datatype='datetime' name='[earliest_flu_shot_2022]' role='dimension' type='ordinal' />
+            <column caption='Flu Shot 2022' datatype='integer' name='[flu_shot_2022]' role='measure' type='quantitative' />
+            <column-instance column='[earliest_flu_shot_2022]' derivation='Month' name='[mn:earliest_flu_shot_2022:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1003176833989550085]' derivation='Sum' name='[sum:Calculation_1003176833989550085:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[mn:earliest_flu_shot_2022:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:earliest_flu_shot_2022:ok]' />
+              <groupfilter function='member' level='[mn:earliest_flu_shot_2022:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0isxhof18dxmq81eyjpnm00eotn9].[mn:earliest_flu_shot_2022:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[cum:sum:flu_shot_2022:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[cum:sum:flu_shot_2022:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='width' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk]' value='32' />
+            <format attr='width' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[cum:sum:flu_shot_2022:qk]' value='32' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[mn:earliest_flu_shot_2022:ok]' value='90' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[mn:earliest_flu_shot_2022:ok]' value='iLLL' />
+            <format attr='font-size' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk]' value='12' />
+            <format attr='font-weight' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk]' value='bold' />
+            <format attr='text-format' field='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#03045e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#caf0f8' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#caf0f8' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0isxhof18dxmq81eyjpnm00eotn9].[cum:sum:flu_shot_2022:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#caf0f8' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:Calculation_1003176833989550085:qk] + [federated.0isxhof18dxmq81eyjpnm00eotn9].[cum:sum:flu_shot_2022:qk])</rows>
+        <cols>[federated.0isxhof18dxmq81eyjpnm00eotn9].[mn:earliest_flu_shot_2022:ok]</cols>
+      </table>
+      <simple-id uuid='{92EAA231-8570-4658-B157-C3806C60D651}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#03045e' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='18' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='13' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+              <zone h='97916' id='8' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='97916' id='6' type-v2='layout-basic' w='98828' x='586' y='1042'>
+                  <zone forceUpdate='true' h='14583' id='3' type-v2='text' w='49414' x='586' y='1042'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='20' underline='true'>Flu Shots Statistics 2022</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='37630' id='5' name='Flu Shots by Age' w='45167' x='586' y='15625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='37630' id='10' name='Flu Shots by Race' w='53661' x='45753' y='15625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45703' id='11' name='Flu Shot % by County' w='32723' x='586' y='53255'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45703' id='15' name='Total Cumulative Patients Vaccinated' w='42771' x='56643' y='53255'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45703' id='16' name='Flu Shots List' w='23334' x='33309' y='53255'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='14583' id='19' name='Total Compliance' show-title='false' w='24707' x='50000' y='1042'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='14583' id='20' name='Flu Shots Given' show-title='false' w='24707' x='74707' y='1042'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='23' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone forceUpdate='true' h='14583' id='3' type-v2='text' w='49414' x='586' y='1042'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff' fontname='Agency FB' fontsize='20' underline='true'>Flu Shots Statistics 2022</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='104' h='14583' id='19' is-fixed='true' name='Total Compliance' show-title='false' w='24707' x='50000' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='104' h='14583' id='20' is-fixed='true' name='Flu Shots Given' show-title='false' w='24707' x='74707' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37630' id='5' is-fixed='true' name='Flu Shots by Age' w='45167' x='586' y='15625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37630' id='10' is-fixed='true' name='Flu Shots by Race' w='53661' x='45753' y='15625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45703' id='11' is-fixed='true' name='Flu Shot % by County' w='32723' x='586' y='53255'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45703' id='16' is-fixed='true' name='Flu Shots List' w='23334' x='33309' y='53255'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45703' id='15' is-fixed='true' name='Total Cumulative Patients Vaccinated' w='42771' x='56643' y='53255'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{357ADC76-22F1-41D2-8311-078CEC9AAD46}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Flu Shots by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{85DF838B-8039-4801-AA14-58D31B451FCA}' />
+    </window>
+    <window class='worksheet' name='Flu Shots by Race'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C48DC2AA-238C-4D15-87B0-A2AB9EEBF6FB}' />
+    </window>
+    <window class='worksheet' name='Flu Shot % by County'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0isxhof18dxmq81eyjpnm00eotn9].[avg:flu_shot_2022:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{449449EC-5534-4A78-9D30-DD6CCC4C35CC}' />
+    </window>
+    <window class='worksheet' name='Flu Shots List'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0isxhof18dxmq81eyjpnm00eotn9].[sum:flu_shot_2022:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B6E68C84-2C37-42A2-8002-78797BB81013}' />
+    </window>
+    <window class='worksheet' name='Total Compliance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD82AEA3-190D-4D85-9C19-431D0A93C775}' />
+    </window>
+    <window class='worksheet' name='Flu Shots Given'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E6881EB-2D33-4F7D-BDF6-5B4D7F155714}' />
+    </window>
+    <window class='worksheet' name='Total Cumulative Patients Vaccinated'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0isxhof18dxmq81eyjpnm00eotn9].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D442854F-C288-41DF-803E-10320458EBA5}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Flu Shot % by County'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Flu Shots Given'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Flu Shots List' />
+        <viewpoint name='Flu Shots by Age' />
+        <viewpoint name='Flu Shots by Race' />
+        <viewpoint name='Total Compliance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Cumulative Patients Vaccinated'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{482833BF-E37C-42CB-8F9B-AAE8F121E0DF}' />
+    </window>
+  </windows>
+</workbook>
